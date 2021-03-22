@@ -57,11 +57,11 @@ func GenerateSuccessResponse(obj interface{}, limit, offset, recordCount int) Su
 }
 
 // GenerateErrorResponse - Made a error response
-func GenerateErrorResponse(message string, errorCode int) ErrorReponse {
+func GenerateErrorResponse(message, moreInfo string, errorCode int) ErrorReponse {
 	errorResponse := ErrorReponse{
 		Message:   message,
 		ErrorCode: errorCode,
-		MoreInfo:  "Por favor entre em contato com a equipe responsável por e-mail ou slack",
+		MoreInfo:  moreInfo,
 	}
 
 	return errorResponse
@@ -75,18 +75,18 @@ func GetPagingParameters(r echo.Context) (int, int, string) {
 	offsetParam := r.QueryParam("offset")
 
 	if (limitParam != "" && offsetParam == "") || (limitParam == "" && offsetParam != "") {
-		return 0, 0, "Para realizar a consulta paginada é necessário informar dois parâmetros: 'limit' e 'offset'"
+		return 0, 0, "The params: 'limit' and 'offset' are mandatories"
 	}
 
 	if limitParam != "" && offsetParam != "" {
 		limit, err := strconv.Atoi(r.QueryParam("limit"))
 		if err != nil {
-			return 0, 0, "Erro na conversão do parametro 'limit'"
+			return 0, 0, "Error trying convert the 'limit' param"
 		}
 
 		offset, err = strconv.Atoi(r.QueryParam("offset"))
 		if err != nil {
-			return 0, 0, "Erro na conversão do parametro 'offset'"
+			return 0, 0, "Error trying convert the 'offset' param"
 		}
 
 		return limit, offset, ""
