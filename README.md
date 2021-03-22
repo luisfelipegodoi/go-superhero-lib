@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://go.dev" target="_blank" >
-    <img alt="cvc-go-commons" src="https://git.cvc.com.br/CVC-Digital/cvc-go-commons/raw/master/src/img/go-wallpaper.jpeg" width="400" />
+    <img alt="go-superhero-lib" src="https://github.com/luisfelipegodoi/go-superhero-lib/raw/master/src/img/go-superhero-lib.png" width="400" />
   </a>
 </p>
 <p align="center">
@@ -16,7 +16,7 @@ go get github.com/luisfelipegodoi/go-superhero-lib
 ```
 
 ## How to contribute too
-* [CONTRIBUTING.md](https://git.cvc.com.br/CVC-Digital/cvc-go-commons/blob/master/CONTRIBUTING.md) - See the contributing file and let's talk the same language =).
+* [CONTRIBUTING.md](https://github.com/luisfelipegodoi/go-superhero-lib/blob/master/CONTRIBUTING.md) - See the contributing file and let's talk the same language =).
 
 ## Coding Style
 Commits: https://www.conventionalcommits.org/en/v1.0.0/
