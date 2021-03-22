@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://go.dev" target="_blank" >
-    <img alt="go-superhero-lib" src="https://github.com/luisfelipegodoi/go-superhero-lib/raw/master/src/img/go-superhero-lib.png" width="400" />
+    <img alt="go-superhero-lib" src="https://github.com/luisfelipegodoi/go-superhero-lib/blob/master/src/img/go-super-hero.png" width="400" />
   </a>
 </p>
 <p align="center">
