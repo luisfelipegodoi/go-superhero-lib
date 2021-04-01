@@ -5,8 +5,11 @@ go 1.16
 require (
 	github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6 // indirect
 	github.com/coreos/go-etcd v2.0.0+incompatible // indirect
+	github.com/go-playground/validator/v10 v10.4.1 // indirect
+	github.com/instana/go-sensor v1.27.5 // indirect
 	github.com/labstack/echo/v4 v4.2.1 // indirect
 	github.com/multiplay/go-slack v0.0.0-20200412115802-09e9e2b93fe2 // indirect
+	github.com/opentracing/basictracer-go v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/spf13/viper v1.7.1 // indirect
 	github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8 // indirect
