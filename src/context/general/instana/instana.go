@@ -16,6 +16,8 @@ func NewInstana(logger *logrus.Logger) Instana {
 }
 
 func (it *Instana) InitMetrics() {
-	instana.InitSensor(&instana.Options{})
+	instana.InitSensor(&instana.Options{
+		EnableAutoProfile: true,
+	})
 	instana.SetLogger(it.Logger)
 }
